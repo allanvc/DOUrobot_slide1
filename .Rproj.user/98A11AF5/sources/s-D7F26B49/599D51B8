@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3157147106",
+    "hash" : "1244932979",
     "id" : "599D51B8",
-    "lastKnownWriteTime" : 1567709352,
-    "last_content_update" : 1567709352706,
+    "lastKnownWriteTime" : 1567712351,
+    "last_content_update" : 1567712351659,
     "path" : "~/Documents/r-projects/presentations/midd_xaringan-master/slides/index.Rmd",
     "project_path" : "index.Rmd",
     "properties" : {
         "cursorPosition" : "102,27",
-        "scrollLine" : "95"
+        "scrollLine" : "94"
     },
     "read_only" : false,
     "read_only_alternatives" : [
