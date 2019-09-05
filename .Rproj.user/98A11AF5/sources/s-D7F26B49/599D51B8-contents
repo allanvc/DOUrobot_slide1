@@ -1,0 +1,191 @@
+---
+title: "<code><font color =#F8A53A>D</font><font color =#76DFEC>O</font><font color =#C2DB70>U</font><font color =#4C5455>robot</font></code>"
+subtitle: "Receba o que interessa no D.O.U. enquanto você toma seu ☕"
+author: "Allan V. C. Quadros"
+date: "GOVrobots/Metapolítica </br> `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["./css/middlebury.css", "./css/middlebury-fonts.css"]
+    nature:
+      beforeInit: ["./js/midd_xaringan.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    includes:
+      in_header: "./libs/partials/header.html"
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+layout: true
+background-image: url(https://github.com/allanvc/fig_repo/raw/master/logo2.png)
+background-position: 0% 100%
+background-size: 5%
+
+---
+
+class: inverse, center, middle
+<!-- title-slide-section-grey,  -->
+
+## Como é a leitura e extração de dados do D.O.U. hoje?
+
+## 👀
+	
+
+---
+
+
+background-image: url(https://media.giphy.com/media/YAy9NNu16pYYg/source.gif)
+background-size: 80%
+background-position: 50% 50%
+
+
+---
+
+## <code><font color =#F8A53A>D</font><font color =#76DFEC>O</font><font color =#C2DB70>U</font><font color =#4C5455>robot</font></code>
+
+</br>
+</br>
+
+<!-- #76DFEC - azul claro -->
+	<!-- #F35A94 - rosa -->
+	<!-- #F8A53A - laranja -->
+	<!-- #C2DB70 - verde -->
+	<!-- #4C5455 - cinza -->
+
+--
+### <font color =#F8A53A> O que é?</font>
+
+--
+
+### <font color =#76DFEC> Como funciona?</font>
+
+--
+
+### <font color =#C2DB70> Como ele vai facilitar seu trabalho?</font>
+
+
+---
+class: center, middle
+# <font color =#F8A53A>O que é?</font>
+
+</br>
+
+### <font color =#4C5455>É um algoritmo sofisticado para raspar dados do Diário Oficial da União de forma automática, a partir de uma lista de palavras definidas pelo cliente.</font>
+
+<center>
+```{r, fig.height=4.5, fig.width=4.5, fig.retina=2, fig.align='center', message=FALSE, warning=FALSE, echo=FALSE}
+library(wordcloud2)
+palavras <- data.frame(
+  word = c("Educação", "Economia", "Câmara", "Senado",
+           "FGTS", "Professor", "ProUNI", "EUA", "Israel", "Chile",
+           "Partidos", "IBAMA", "Amazônia", "Jornalismo",
+           "Meio Ambiente", "Exército", "FIES", "Presidência",
+           "Pátria", "Licitação", "Lei 8.666", "Venda", "Privatização",
+           "PETROBRAS", "gasolina", "preços", "Previdência", "reforma"),
+  freq = c(10, 12, 23, 15, 3, 5, 4, 8, 14, 3, 9, 10, 9, 2, 8, 8, 3, 4, 1, 12, 12, 13, 10, 3, 3, 2, 13, 13)
+  )
+
+rownames(palavras) <- palavras$word
+wordcloud2(palavras, size = .5)
+```
+
+</center>
+
+---
+
+# <font color =#76DFEC>Como funciona?</font>
+
+![](./img/dourobot_diagram3.png)
+
+
+---
+
+# <font color =#C2DB70> Como ele vai facilitar seu trabalho?</font>
+
+</br>
+</br>
+</br>
+### <font color =#4C5455>Vejamos na prática...</font>
+
+<!-- Perguntar se alguém já faz esse tipo de trabalho e qto tempo leva -->
+<!-- Buscar palavras Ministério da Educação, FIES (erro da imprensa), graduação, licitação -->
+
+---
+
+
+.pull-left[
+
+### Custo (de não adotar o <code><font color =#F8A53A>D</font><font color =#76DFEC>O</font><font color =#C2DB70>U</font><font color =#4C5455>robot</font></code>) 💸
+
+1. Tempo: 
+</br>
+ex: 10 palavras, média 20 ocorrências, 1 minuto por documento (leitura+extração)
+
+1. Financeiro:
+</br>
+ex: Hora/trabalho estagiário*: ~R$9,00
+
+]
+
+.pull-right[
+
+</br>
+</br>
+![](./img/chaplin.gif)
+
+
+]
+
+---
+
+.pull-left[
+
+### Benefício (em adotar o <code><font color =#F8A53A>D</font><font color =#76DFEC>O</font><font color =#C2DB70>U</font><font color =#4C5455>robot</font></code>)💰
+
+1. Otimização de tempo:
+</br>
+redirecionar o traalho da equipe para o que interessa.
+
+1. Comodidade:
+</br>
+receber e-mail todas as manhãs* com tudo pronto.
+
+1. Robustez e confiabilidade:
+</br>
+não tem preço
+
+]
+
+
+.pull-right[
+
+![](https://media.giphy.com/media/o2NnUFBsrOMog/source.gif)
+
+]
+
+---
+class: title-slide-final, middle
+background-image: url(https://github.com/allanvc/fig_repo/raw/master/logo2.png)
+background-size: 100px
+background-position: 9% 15%
+
+# Obrigado!
+
+
+## <code><font color =#F8A53A>D</font><font color =#76DFEC>O</font><font color =#C2DB70>U</font><font color =#4C5455>robot</font></code>
+
+
+### .white[Estamos à disposição para quaisquer dúvidas.]
+
+**Contato:**
+
+|                                                                                                            |                                   |
+| :--------------------------------------------------------------------------------------------------------- | :-------------------------------- |
+| <a href="mailto:jcasilla@middlebury.edu">.RUred[<i class="fa fa-paper-plane fa-fw"></i>] | allanvcq@gmail.com       |
+
+
